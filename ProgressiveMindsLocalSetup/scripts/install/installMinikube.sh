@@ -37,7 +37,7 @@ sudo usermod -aG docker $USER && newgrp docker
 echo "Starting Minikube..."
 minikube config set driver docker
 
-sudo minikube start --driver=docker
+minikube start --driver=docker
 
 echo "Minikube installation and configuration complete!"
 modifyBashrc "minikube start" "minikube start"
